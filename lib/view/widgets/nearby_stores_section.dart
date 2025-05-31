@@ -1,5 +1,5 @@
-import 'package:bw1_machine_test/constants/colors.dart';
-import 'package:bw1_machine_test/constants/images.dart';
+import 'package:bw1_machine_test/core/constants/colors.dart';
+import 'package:bw1_machine_test/core/constants/images.dart';
 import 'package:flutter/material.dart';
 
 class NearbyStoresSection extends StatelessWidget {
@@ -103,7 +103,13 @@ class NearbyStoresSection extends StatelessWidget {
                                         Text('4.1'),
                                       ],
                                     ),
-                                    Text('45 mins'),
+                                    Text(
+                                      '45 mins',
+                                      style: TextStyle(
+                                        color: Colors.orange,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ],

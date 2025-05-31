@@ -1,12 +1,11 @@
-import 'package:bw1_machine_test/constants/colors.dart';
-import 'package:bw1_machine_test/constants/images.dart';
-import 'package:bw1_machine_test/widgets/bottum_button.dart';
-import 'package:bw1_machine_test/widgets/category_section.dart';
-import 'package:bw1_machine_test/widgets/image_slider_section.dart';
-import 'package:bw1_machine_test/widgets/location_section.dart';
-import 'package:bw1_machine_test/widgets/nearby_stores_section.dart';
-import 'package:bw1_machine_test/widgets/search_section.dart';
-import 'package:bw1_machine_test/widgets/trending_section.dart';
+import 'package:bw1_machine_test/core/constants/images.dart';
+import 'package:bw1_machine_test/view/widgets/bottum_button.dart';
+import 'package:bw1_machine_test/view/widgets/category_section.dart';
+import 'package:bw1_machine_test/view/widgets/image_slider_section.dart';
+import 'package:bw1_machine_test/view/widgets/location_section.dart';
+import 'package:bw1_machine_test/view/widgets/nearby_stores_section.dart';
+import 'package:bw1_machine_test/view/widgets/search_section.dart';
+import 'package:bw1_machine_test/view/widgets/trending_section.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {

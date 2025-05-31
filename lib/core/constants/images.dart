@@ -16,3 +16,11 @@ const List<String> categoryImages = [
   'assets/images/Group (2).png',
   'assets/images/Group 51.png',
 ];
+const List<String> notificationsImages = [
+  'assets/images/order_assigned.png',
+  'assets/images/order_delivered.png',
+  'assets/images/order_cancelled.png',
+  'assets/images/promotion_marketplace.png',
+  'assets/images/promotion_nootify.png',
+  'assets/images/support_peersonnel.png',
+];

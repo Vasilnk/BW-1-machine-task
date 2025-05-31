@@ -1,6 +1,6 @@
-import 'package:bw1_machine_test/constants/colors.dart';
-import 'package:bw1_machine_test/constants/names.dart';
-import 'package:bw1_machine_test/widgets/category_item.dart';
+import 'package:bw1_machine_test/core/constants/colors.dart';
+import 'package:bw1_machine_test/core/constants/names.dart';
+import 'package:bw1_machine_test/view/widgets/category_item.dart';
 import 'package:flutter/material.dart';
 
 class CategorySection extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:bw1_machine_test/constants/colors.dart';
+import 'package:bw1_machine_test/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class BottumButton extends StatelessWidget {
@@ -9,7 +9,7 @@ class BottumButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: () {},
       style: ElevatedButton.styleFrom(
-        padding: EdgeInsets.symmetric(horizontal: 35),
+        padding: EdgeInsets.symmetric(horizontal: 60),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         backgroundColor: primaryColor,
       ),

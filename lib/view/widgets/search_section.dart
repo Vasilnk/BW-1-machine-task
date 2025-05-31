@@ -1,6 +1,6 @@
-import 'package:bw1_machine_test/constants/colors.dart';
-import 'package:bw1_machine_test/constants/images.dart';
-import 'package:bw1_machine_test/screens/notification_screen.dart';
+import 'package:bw1_machine_test/core/constants/colors.dart';
+import 'package:bw1_machine_test/core/constants/images.dart';
+import 'package:bw1_machine_test/view/screens/notification_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

@@ -1,4 +1,4 @@
-import 'package:bw1_machine_test/constants/images.dart';
+import 'package:bw1_machine_test/core/constants/images.dart';
 import 'package:flutter/material.dart';
 
 class TrendingSection extends StatelessWidget {
