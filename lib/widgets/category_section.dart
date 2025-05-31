@@ -1,7 +1,7 @@
 import 'package:bw1_machine_test/constants/colors.dart';
+import 'package:bw1_machine_test/constants/names.dart';
 import 'package:bw1_machine_test/widgets/category_item.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class CategorySection extends StatelessWidget {
   const CategorySection({super.key});
@@ -14,24 +14,32 @@ class CategorySection extends StatelessWidget {
       children: [
         Text(
           'What would you like to do today?',
-          style: GoogleFonts.inter(fontSize: 20, fontWeight: FontWeight.w500),
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
         ),
         SizedBox(
-          height: 150,
+          height: 220,
           child: GridView.builder(
-            itemCount: 8,
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            itemCount: categoryNames.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 4,
+              childAspectRatio: 0.65,
+              crossAxisSpacing: 15,
+              mainAxisSpacing: 15,
             ),
             itemBuilder: (context, index) {
-              return CategoryItem();
+              return CategoryItem(index: index);
             },
           ),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('More', style: TextStyle(color: primaryColor)),
+            Text(
+              'More',
+              style: TextStyle(fontFamily: 'Inter', color: primaryColor),
+            ),
             Icon(Icons.keyboard_arrow_down_outlined, color: primaryColor),
           ],
         ),

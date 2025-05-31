@@ -27,7 +27,13 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Notifications'),
-        leading: Icon(Icons.arrow_circle_left, color: primaryColor),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_circle_left),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          color: primaryColor,
+        ),
       ),
       body: BlocBuilder<NotificationBloc, NotificationState>(
         builder: (context, state) {
@@ -47,16 +53,16 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                     ListTile(
                       leading: Column(
                         children: [
-                          // CircleAvatar(
-                          //   backgroundImage: NetworkImage(
-                          //     'https://raw.githubusercontent.com/sayanp23/test-api/main/order_delivered.png',
-                          //   ),
-                          // ),
+                          SizedBox(
+                            width: 50,
+                            height: 50,
+                            child: Image.asset(notification.image),
+                          ),
                         ],
                       ),
                       title: Text(
                         notification.title,
-                        style: GoogleFonts.inter(
+                        style: TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 17,
                         ),
@@ -66,7 +72,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                           Text(
                             notification.body,
                             style: TextStyle(
-                              fontSize: 15,
+                              fontSize: 13,
                               color: const Color.fromARGB(255, 155, 152, 152),
                             ),
                           ),

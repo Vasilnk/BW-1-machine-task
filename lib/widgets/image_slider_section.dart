@@ -1,9 +1,14 @@
-import 'package:bw1_machine_test/constants/images.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-class FirstImageSliderSection extends StatelessWidget {
-  const FirstImageSliderSection({super.key});
+class ImageSliderSection extends StatelessWidget {
+  final String image;
+  final String title;
+  const ImageSliderSection({
+    super.key,
+    required this.image,
+    required this.title,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -12,17 +17,18 @@ class FirstImageSliderSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Top picks for you',
+          title,
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
         ),
         CarouselSlider.builder(
           itemCount: 2,
           itemBuilder: (context, index, ind) {
             return Container(
+              // width: MediaQuery.of(context).size.width * 0.95,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 image: DecorationImage(
-                  image: AssetImage(firstCarosalImage),
+                  image: AssetImage(image),
                   fit: BoxFit.fill,
                 ),
               ),

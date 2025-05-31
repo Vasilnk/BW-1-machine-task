@@ -45,10 +45,28 @@ class SearchSection extends StatelessWidget {
                 );
               },
             ),
-            Container(decoration: BoxDecoration(color: Colors.red)),
+            Positioned(
+              left: 23,
+              top: 12,
+              child: Container(
+                padding: EdgeInsets.only(right: 4, left: 4, bottom: 1.5),
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  '2',
+                  style: TextStyle(
+                    fontSize: 10,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
-        Image.asset(tagImage, width: 20),
+        Image.asset(tagImage, width: 23),
       ],
     );
   }
