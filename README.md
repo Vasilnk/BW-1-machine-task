@@ -1,4 +1,4 @@
-# Big Market
+# Big Market (A part of E-commerce application)
 
 
 This Flutter app was created as a machine task assignment. It has two main screens — **Home** and **Notification** — home screen accessible via a bottom navigation bar. The **first landing screen** and the **first bottom navigation bar item** is the **Home Screen**.
