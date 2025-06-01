@@ -1,16 +1,37 @@
-# bw1_machine_test
+# Big Market
 
-A new Flutter project.
+This is a Flutter application built as part of a machine task. It has two main screens: **Home** and **Notification**, with a bottom navigation bar to switch between them.
 
-## Getting Started
+## 🏠 Home Screen
 
-This project is a starting point for a Flutter application.
+- Hardcoded location display (as API not required in task)
+- Top row with:
+  - Search bar
+  - Notification icon
+  - Offer tag
+- Category section
+- Carousel slider for discount images
+- Trending products section
+- Favorite carousel slider section
+- Refer and earn image section
+- Nearby stores section
+- "View All Stores" button
 
-A few resources to get you started if this is your first Flutter project:
+## 🔔 Notification Screen
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- App bar with title
+- Notifications fetched from an API
+- Shows loading indicator while data is loading
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+
+- **Flutter**
+- **State Management**: BLoC
+- **Packages Used**:
+  - `http` – for API calls
+  - `carousel_slider` – for image sliders
+  - `timeago` – to show time like "5 minutes ago"
+
+## 🚀 How to Run
+
+1. Clone this repository (replace with your actual GitHub repo URL):
