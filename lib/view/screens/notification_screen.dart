@@ -3,7 +3,7 @@ import 'package:bw1_machine_test/view/widgets/notification_tile.dart';
 import 'package:bw1_machine_test/view_model/bloc/bloc.dart';
 import 'package:bw1_machine_test/view_model/bloc/event.dart';
 import 'package:bw1_machine_test/view_model/bloc/state.dart';
-import 'package:bw1_machine_test/core/constants/colors.dart';
+import 'package:bw1_machine_test/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -34,30 +34,41 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
             );
           } else if (state is LoadededNotifications) {
             final notifications = state.notifications;
-            return Column(
-              children: [
-                SizedBox(height: 20),
-                Expanded(
-                  child: ListView.separated(
-                    itemBuilder: (context, index) {
-                      final notification = notifications[index];
+            return Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  SizedBox(height: 20),
+                  Expanded(
+                    child: ListView.separated(
+                      itemBuilder: (context, index) {
+                        final notification = notifications[index];
 
-                      return NotificationTile(
-                        index: index,
-                        notification: notification,
-                      );
-                    },
-                    separatorBuilder: (c, index) {
-                      return Divider();
-                    },
-                    itemCount: notifications.length,
+                        return NotificationTile(
+                          index: index,
+                          notification: notification,
+                        );
+                      },
+                      separatorBuilder: (c, index) {
+                        return Divider();
+                      },
+                      itemCount: notifications.length,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
+            );
+          } else if (state is NotificationError) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(state.message),
+                backgroundColor: Colors.red,
+              ),
             );
           } else {
-            return Center(child: Text('No Notifications in Server'));
+            return Center(child: Text('No Notifications'));
           }
+          return SizedBox.shrink();
         },
       ),
     );

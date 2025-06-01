@@ -1,4 +1,4 @@
-import 'package:bw1_machine_test/core/constants/colors.dart';
+import 'package:bw1_machine_test/constants/colors.dart';
 import 'package:bw1_machine_test/view/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -23,10 +23,15 @@ class _LandingScreenState extends State<LandingScreen> {
         selectedIconTheme: IconThemeData(color: primaryColor),
         unselectedItemColor: Colors.grey,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.storefront), label: 'Home'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.storefront),
+            label: 'Home',
+            backgroundColor: Colors.white,
+          ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_basket_outlined),
             label: 'Cart',
+            backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_bag_outlined),

@@ -1,5 +1,6 @@
-import 'package:bw1_machine_test/core/constants/images.dart';
-import 'package:bw1_machine_test/core/constants/names.dart';
+import 'package:bw1_machine_test/constants/colors.dart';
+import 'package:bw1_machine_test/constants/images.dart';
+import 'package:bw1_machine_test/constants/names.dart';
 import 'package:flutter/material.dart';
 
 class CategoryItem extends StatelessWidget {
@@ -39,7 +40,7 @@ class CategoryItem extends StatelessWidget {
                           vertical: 1,
                         ),
                         decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 117, 81, 179),
+                          color: offertagColor,
                           borderRadius: BorderRadius.circular(5),
                         ),
                         child: Center(

@@ -1,6 +1,5 @@
-import 'package:bw1_machine_test/core/constants/colors.dart';
+import 'package:bw1_machine_test/constants/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class LocationSection extends StatelessWidget {
   const LocationSection({super.key});
@@ -13,7 +12,7 @@ class LocationSection extends StatelessWidget {
         Icon(Icons.location_on_rounded, color: primaryColor),
         Text(
           'ABCD,New Delhi',
-          style: GoogleFonts.roboto(fontWeight: FontWeight.bold, fontSize: 16),
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
         ),
         Icon(Icons.keyboard_arrow_down, color: primaryColor),
       ],

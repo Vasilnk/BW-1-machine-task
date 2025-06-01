@@ -10,3 +10,9 @@ class LoadededNotifications extends NotificationState {
   List<NotificationData> notifications = [];
   LoadededNotifications(this.notifications);
 }
+
+class NotificationError extends NotificationState {
+  final String message;
+
+  NotificationError(this.message);
+}

@@ -1,4 +1,4 @@
-import 'package:bw1_machine_test/core/constants/images.dart';
+import 'package:bw1_machine_test/constants/images.dart';
 import 'package:bw1_machine_test/view/widgets/bottum_button.dart';
 import 'package:bw1_machine_test/view/widgets/category_section.dart';
 import 'package:bw1_machine_test/view/widgets/image_slider_section.dart';

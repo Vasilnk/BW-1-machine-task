@@ -1,4 +1,4 @@
-import 'package:bw1_machine_test/core/constants/colors.dart';
+import 'package:bw1_machine_test/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {

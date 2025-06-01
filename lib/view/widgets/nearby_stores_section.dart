@@ -1,5 +1,5 @@
-import 'package:bw1_machine_test/core/constants/colors.dart';
-import 'package:bw1_machine_test/core/constants/images.dart';
+import 'package:bw1_machine_test/constants/colors.dart';
+import 'package:bw1_machine_test/constants/images.dart';
 import 'package:flutter/material.dart';
 
 class NearbyStoresSection extends StatelessWidget {
@@ -116,22 +116,22 @@ class NearbyStoresSection extends StatelessWidget {
                             ),
                             const Divider(),
                             Row(
-                              spacing: 8,
+                              spacing: 5,
                               children: [
-                                Image.asset(percentageImage),
+                                Image.asset(percentageImage, width: 13),
                                 Text(
                                   'Upto 10% OFF',
                                   style: TextStyle(
-                                    fontSize: 12,
+                                    fontSize: 11,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                Image.asset(groceryImage),
+                                Image.asset(groceryImage, width: 13),
 
                                 Text(
                                   '3400+ items available',
                                   style: TextStyle(
-                                    fontSize: 12,
+                                    fontSize: 11,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),

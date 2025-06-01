@@ -16,15 +16,17 @@ class ImageSliderSection extends StatelessWidget {
       spacing: 8,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          title,
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            title,
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+          ),
         ),
         CarouselSlider.builder(
           itemCount: 2,
           itemBuilder: (context, index, ind) {
             return Container(
-              // width: MediaQuery.of(context).size.width * 0.95,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 image: DecorationImage(

@@ -15,13 +15,12 @@ class NotificationServices {
         final notificationData = NotificationModel.fromJson(
           jsonDecode(responce.body),
         );
-        print('fetched data sucess');
         return notificationData.data;
       } else {
-        print('fetching data is error');
+        throw Exception('Server error: ${responce.statusCode}');
       }
     } catch (e) {
-      print('Exeption: $e');
+      throw Exception('Failed to load notifications: $e');
     }
   }
 }

@@ -8,8 +8,16 @@ class NotificationBloc extends Bloc<NotificationEvent, NotificationState> {
   NotificationBloc(this.notificationServices) : super(InitialNotifications()) {
     on<FetchNotificationEvent>((event, emit) async {
       emit(LoadingNotifications());
-      final notifications = await notificationServices.fetchData();
-      emit(LoadededNotifications(notifications));
+      try {
+        final notifications = await notificationServices.fetchData();
+        if (notifications != null) {
+          emit(LoadededNotifications(notifications));
+        } else {
+          emit(NotificationError("No notifications available"));
+        }
+      } catch (e) {
+        emit(NotificationError("Error fetching notifications: $e"));
+      }
     });
   }
 }
