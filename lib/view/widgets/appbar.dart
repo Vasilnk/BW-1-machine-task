@@ -36,8 +36,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Colors.grey.withOpacity(0.0),
                 Colors.grey.withOpacity(0.3),
+                Colors.grey.withOpacity(0.0),
               ],
               stops: const [0.0, 1.0],
             ),
